@@ -2,12 +2,68 @@
 
 ---
 
-## What is Babel?
+## What Is Babel?
 
-Babel is java script transpiler.
-It takes a javascript/typescript code and transpile it to another version of javascript.
+
+Babel is java script transpiler. It takes a javascript code and transpile it to another (older) version of javascript.
+
+
+Babel can also transpile typescript and react❗
 
 
 > Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
 
 *https://babeljs.io/docs/en/*
+
+---
+
+## Why Do We Need Babel?
+
+
+When we writing a client side code
+- to use newest `js` features
+- tu use typescript
+- to use react
+
+---
+
+## What Can Babel Do?
+
+
+- transform syntax
+- polyfill
+
+---
+
+## How Babel Is Build?
+
+
+Babel is build out of 
+- plugins
+- presets
+
+
+### Plugins
+Are just javascript functions
+
+
+### Presets
+Are sets of functions
+
+
+Transpilation is just execution of following plugins and presets
+
+---
+
+## How To Use Babel?
+
+
+Install babel packages
+- `@babel/core`
+- `@babel/cli`
+
+
+Install plugins and presets. For example `@babel/preset-env`
+
+
+Add to project `babel.config.json`
