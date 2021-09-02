@@ -47,11 +47,21 @@ Babel is build out of
 Are just javascript functions
 
 
+Order of plugins execution from configuration file is left to right
+
+
 ### Presets
 Are sets of functions
 
 
-Transpilation is just execution of following plugins and presets
+Transpilation is just execution of following plugins and presets on source code
+
+
+Order of presets execution from configuration file is right to left
+
+
+### Options
+Plugins and presets can be configurable via options
 
 ---
 
@@ -67,3 +77,13 @@ Install plugins and presets. For example `@babel/preset-env`
 
 
 Add to project `babel.config.json`
+
+---
+
+## Example of Syntax Transformation
+
+---
+
+## Example of Polyfill
+
+---
