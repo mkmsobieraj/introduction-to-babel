@@ -1,14 +1,16 @@
 ## Introduction to Babel
 
+https://babeljs.io/docs/en/
+
 ---
 
 ## What Is Babel?
 
 
-Babel is java script transpiler. It takes a javascript code and transpile it to another (older) version of javascript.
+Babel is java script transpiler. It takes a JavaScript code and transpile it to another (older) version of JavaScript.
 
 
-Babel can also transpile typescript and react❗
+Babel can also transpile TypeScript and React❗
 
 
 > Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
@@ -17,51 +19,64 @@ Babel can also transpile typescript and react❗
 
 ---
 
+## What Babel Is Not?
+
+
+Babel is not a bundler❗
+
+---
+
 ## Why Do We Need Babel?
 
 
-When we writing a client side code
-- to use newest `js` features
-- tu use typescript
-- to use react
+When we are writing a client side code
+<ul>
+  <li class="fragment">to use newest JavaScript features</li>
+  <li class="fragment">to use TypeScript</li>
+  <li class="fragment">to use React</li>
+</ul>
 
 ---
 
 ## What Can Babel Do?
 
 
-- transform syntax
-- polyfill
+<ul>
+  <li>transform syntax</li>
+  <li class="fragment">polyfill</li>
+</ul>
 
 ---
 
-## How Babel Is Build?
+## How Babel Work?
 
 
 Babel is build out of 
-- plugins
-- presets
+<ul>
+  <li class="fragment">plugins</li>
+  <li class="fragment">presets</li>
+</ul>
 
 
 ### Plugins
-Are just javascript functions
+Are just JavaScript functions.
 
 
-Order of plugins execution from configuration file is left to right
+Order of plugins execution from configuration file is left to right.
 
 
 ### Presets
-Are sets of functions
+Are sets of functions.
 
 
-Transpilation is just execution of following plugins and presets on source code
+Order of presets execution from configuration file is right to left.
 
 
-Order of presets execution from configuration file is right to left
+Transpilation is just execution of following plugins and presets on source code.
 
 
 ### Options
-Plugins and presets can be configurable via options
+Plugins and presets can be configurable via options.
 
 ---
 
@@ -69,21 +84,40 @@ Plugins and presets can be configurable via options
 
 
 Install babel packages
-- `@babel/core`
-- `@babel/cli`
+<ul>
+  <li class="fragment"><code>@babel/core</code></li>
+  <li class="fragment"><code>@babel/cli</code></li>
+</ul>
 
 
-Install plugins and presets. For example `@babel/preset-env`
+Install plugins and presets. For example `@babel/preset-env`.
 
 
-Add to project `babel.config.json`
-
----
-
-## Example of Syntax Transformation
+Add `babel.config.json` to the project.
 
 ---
 
-## Example of Polyfill
+## How to configure Babel?
+
+
+<ul>
+  <li><code>babel.config.json</code> file - for monorepo (working directory as root)</li>
+  <li class="fragment"><code>.babelrc.json</code> files - 
+  usually use in multi project build (separate file for each subproject directory)</li>
+  <li class="fragment"><code>package.json</code> (`babel` key) file</li>
+</ul>
 
 ---
+
+## Plugins Example
+https://github.com/mkmsobieraj/introduction-to-babel-examples/tree/i-plugins-example
+
+---
+
+## Presets Example
+https://github.com/mkmsobieraj/introduction-to-babel-examples/tree/ii-presets-example
+
+---
+
+## Typescript With Babel Example
+https://github.com/mkmsobieraj/introduction-to-babel-examples/tree/iii-typescript-with-babel-example

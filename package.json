@@ -1,6 +1,6 @@
 {
   "name": "introduction-to-babel",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Introductory presentation about babel.",
   "main": "src/index.js",
   "engines": {
